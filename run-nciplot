@@ -14,6 +14,8 @@ cd $workingdir
 
 nci.py --create .
 
+export OMP_NUM_THREADS=20
+
 for f in *.nci
 do
     /nciplot-master/src/nciplot "$f" > /dev/null

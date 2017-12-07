@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM sd2e/base:ubuntu16
 
 COPY nciplot-master/ nciplot-master
 
@@ -14,5 +14,5 @@ COPY nci.py /usr/local/bin
 COPY data_prep_nci_integrations.py /usr/local/bin
 COPY run-nciplot /usr/local/bin
 
-RUN cd /usr/local/bin && \
-    chmod a+x run-nciplot data_prep_nci_integrations.py nci.py
+#RUN cd /usr/local/bin && \
+#    chmod a+x run-nciplot data_prep_nci_integrations.py nci.py
